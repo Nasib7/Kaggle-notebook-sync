@@ -1,0 +1,44 @@
+name: Sync Kaggle Notebooks
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'  # runs every day at 12:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Kaggle
+        run: pip install kaggle
+
+      - name: Set up Kaggle credentials
+        run: |
+          mkdir -p ~/.kaggle
+          echo "{\"username\":\"${{ secrets.KAGGLE_USERNAME }}\",\"key\":\"${{ secrets.KAGGLE_KEY }}\"}" > ~/.kaggle/kaggle.json
+          chmod 600 ~/.kaggle/kaggle.json
+
+      - name: Download your notebooks
+        run: |
+          kaggle kernels list --user ${{ secrets.KAGGLE_USERNAME }} > notebooks_list.txt
+          while IFS= read -r line; do
+            NOTEBOOK=$(echo $line | awk '{print $1}')
+            kaggle kernels pull $NOTEBOOK --path kaggle_notebooks --metadata --force
+          done < <(tail -n +2 notebooks_list.txt)
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Auto-update Kaggle notebooks" || echo "No changes to commit"
+          git push
+
