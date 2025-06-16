@@ -19,7 +19,7 @@ All notebooks are manually exported and organized by topic while keeping the ori
 | 2 | Functions                               | ✅ Completed  |
 | 3 | Data Types                              | ✅ Completed  |
 | 4 | Conditions and Conditional Statements   | ✅ Completed |
-| 5 | Intro to Lists                          | ⏳ In Progress |
+| 5 | Intro to Lists                          | ✅ Completed |
 
 ---
 
