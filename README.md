@@ -30,7 +30,7 @@ All notebooks are manually exported and organized by topic while keeping the ori
 | # | Lesson                              | Status         |
 |---|-------------------------------------|----------------|
 | 1 | Hello, Python                       | ✅ Completed |
-| 2 | Functions and Getting Help          | ⏳ In Progress |
+| 2 | Functions and Getting Help          | ✅ Completed |
 | 3 | Booleans and Conditionals           | ⏳ In Progress |
 | 4 | Lists                               | ⏳ In Progress |
 | 5 | Loops and List Comprehensions       | ⏳ In Progress |
