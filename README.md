@@ -31,8 +31,8 @@ All notebooks are manually exported and organized by topic while keeping the ori
 |---|-------------------------------------|----------------|
 | 1 | Hello, Python                       | ✅ Completed |
 | 2 | Functions and Getting Help          | ✅ Completed |
-| 3 | Booleans and Conditionals           | ⏳ In Progress |
-| 4 | Lists                               | ⏳ In Progress |
+| 3 | Booleans and Conditionals           | ✅ Completed |
+| 4 | Lists                               | ✅ Completed |
 | 5 | Loops and List Comprehensions       | ⏳ In Progress |
 | 6 | Strings and Dictionaries            | ⏳ In Progress |
 | 7 | Working with External Libraries     | ⏳ In Progress |
