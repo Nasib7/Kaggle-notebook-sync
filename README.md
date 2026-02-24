@@ -33,7 +33,7 @@ All notebooks are manually exported and organized by topic while keeping the ori
 | 2 | Functions and Getting Help          | ✅ Completed |
 | 3 | Booleans and Conditionals           | ✅ Completed |
 | 4 | Lists                               | ✅ Completed |
-| 5 | Loops and List Comprehensions       | ⏳ In Progress |
+| 5 | Loops and List Comprehensions       | ✅ Completed |
 | 6 | Strings and Dictionaries            | ⏳ In Progress |
 | 7 | Working with External Libraries     | ⏳ In Progress |
 
