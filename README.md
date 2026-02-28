@@ -34,7 +34,7 @@ All notebooks are manually exported and organized by topic while keeping the ori
 | 3 | Booleans and Conditionals           | ✅ Completed |
 | 4 | Lists                               | ✅ Completed |
 | 5 | Loops and List Comprehensions       | ✅ Completed |
-| 6 | Strings and Dictionaries            | ⏳ In Progress |
+| 6 | Strings and Dictionaries            | ✅ Completed |
 | 7 | Working with External Libraries     | ⏳ In Progress |
 
 ---
